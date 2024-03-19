@@ -1,8 +1,13 @@
+package service.Impl;
+
+import models.Movie;
+import service.MovieSortableService;
+
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class ImplMovieSortableService implements MovieSortableService{
+public class ImplMovieSortableService implements MovieSortableService {
     private final List<Movie> movies;
 
     public ImplMovieSortableService(List<Movie> movies) {

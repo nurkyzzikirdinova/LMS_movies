@@ -1,5 +1,8 @@
+package models;
+
 import models.Actor;
 import models.Genre;
+import models.Producer;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -65,7 +68,7 @@ public class Movie {
 
     @Override
     public String toString() {
-        return "models.Movie{" +
+        return "models.models.Movie{" +
                 "name='" + name + '\'' +
                 ", year=" + year +
                 ", genre=" + genre +

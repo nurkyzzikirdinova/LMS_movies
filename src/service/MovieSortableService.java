@@ -1,3 +1,5 @@
+package service;
+
 public interface MovieSortableService {
      void sortMovieByName(String ascOrDesc);
 

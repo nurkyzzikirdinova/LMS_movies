@@ -1,4 +1,7 @@
+package service;
+
 import models.Genre;
+import models.Movie;
 
 import java.time.LocalDate;
 import java.util.List;

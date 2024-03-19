@@ -1,5 +1,9 @@
 import models.Actor;
 import models.Genre;
+import models.Movie;
+import models.Producer;
+import service.Impl.ImplMovieFindableService;
+import service.Impl.ImplMovieSortableService;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -42,7 +46,7 @@ public class Main {
         do {
             System.out.println("""
                     1. Get all movies
-                    2. Find movie by full name or part name
+                    2. Find movie by name (part/full)
                     3. Find movie by actor name
                     4. Find movie by year
                     5. Find movie by producer
@@ -68,9 +72,9 @@ public class Main {
                     Movie foundMoviem = implMovieFindableService.findMovieByFullNameOrPartName(movieName);
                     System.out.println(foundMoviem);
                     if (foundMoviem != null) {
-                        System.out.println("models.Movie is found: ");
+                        System.out.println("models.models.Movie is found: ");
                     } else {
-                        System.out.println("models.Movie not found.");
+                        System.out.println("models.models.Movie not found.");
                     }
                     break;
                 case 3:
@@ -78,9 +82,9 @@ public class Main {
                     String actorName = new Scanner(System.in).nextLine();
                     Movie foundActor = implMovieFindableService.findMovieByActorName(actorName);
                     if (foundActor != null) {
-                        System.out.println("models.Movie is found: " + foundActor.getActors());
+                        System.out.println("models.models.Movie is found: " + foundActor.getActors());
                     } else {
-                        System.out.println("models.Movie not found.");
+                        System.out.println("models.models.Movie not found.");
                     }
 
                     break;
@@ -92,7 +96,7 @@ public class Main {
                     if(d!= null){
                         System.out.println(d);
                     }else{
-                        System.out.println("models.Movie not found.");
+                        System.out.println("models.models.Movie not found.");
                     }
                     break;
                 case 5:
@@ -102,7 +106,7 @@ public class Main {
                     if (pr!=null){
                         System.out.println(pr);
                     }else{
-                        System.out.println("models.Movie not found.");
+                        System.out.println("models.models.Movie not found.");
                     }
 
                     break;
@@ -113,7 +117,7 @@ public class Main {
                     if(gen!=null){
                         System.out.println(gen);
                     }else{
-                        System.out.println("models.Movie not found.");
+                        System.out.println("models.models.Movie not found.");
                     }
                     break;
                 case 7:

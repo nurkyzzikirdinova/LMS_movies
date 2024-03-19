@@ -1,3 +1,5 @@
+package models;
+
 public class Producer {
     private String firstName;
 
@@ -29,7 +31,7 @@ public class Producer {
 
     @Override
     public String toString() {
-        return "Producer{" +
+        return "models.Producer{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';
